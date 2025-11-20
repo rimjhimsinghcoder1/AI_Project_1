@@ -1,5 +1,7 @@
 
 
+---
+
 # **AI_Project_1 – End-to-End Recommendation System with Flask API**
 
 This project demonstrates a complete end-to-end **machine learning recommendation system** suitable for e-commerce or content platforms. It covers **synthetic data generation**, **rule-based and collaborative filtering algorithms**, and **real-time model deployment** using a **Flask REST API**.
@@ -22,21 +24,23 @@ Analyzes user behaviour to identify:
 
 ### **3. Rule-Based Recommendation Engine**
 
-Recommends the **Top 5 most-clicked products** using click frequency as the ranking metric.
+Recommends the **Top 5 most-clicked products** using click frequency.
 
-### **4. Collaborative Filtering (SVD)**
+### **4. Collaborative Filtering Using SVD**
 
-Implements a **matrix factorization** model using the **surprise** library for personalized recommendations.
+Implements a **matrix factorization** model from the **Surprise** library for personalized recommendations.
 
 ### **5. Model Evaluation**
 
-Evaluates collaborative filtering performance using **RMSE** on a train/test split.
+Evaluates recommendation quality using **RMSE** on a train/test split.
 
 ### **6. Flask REST API**
 
-Deploys the recommendation system through an endpoint:
-`GET /recommend?user_id=<id>`
-Returns real-time recommendations in JSON format.
+Provides real-time recommendations via the endpoint:
+
+```
+GET /recommend?user_id=<user_id>
+```
 
 ---
 
@@ -47,9 +51,9 @@ Returns real-time recommendations in JSON format.
 * **Faker**
 * **scikit-surprise**
 * **Flask**
-* **Jupyter Notebook / Google Colab**
+* **Google Colab / Jupyter Notebook**
 
-Deployment: Local Flask server (extendable to cloud hosting platforms such as AWS, GCP, Azure).
+Deployment: Local Flask server, extendable to AWS/GCP/Azure.
 
 ---
 
@@ -57,56 +61,22 @@ Deployment: Local Flask server (extendable to cloud hosting platforms such as AW
 
 ### **1. Data Simulation**
 
-Generates interaction logs for **100 users** across **20 products**.
+Synthetic interaction logs for **100 users** and **20 products**.
 
-### **2. Analysis & Recommendation Logic**
+### **2. Recommendation Logic**
 
-* Popularity-based recommendation (rule-based)
-* Personalized recommendation using **SVD collaborative filtering**
+* **Popularity-based** recommendations
+* **Collaborative filtering (SVD)** for personalized ranking
 
 ### **3. API Deployment**
 
-The trained model and rule-based system are served through a Flask API to provide real-time recommendations based on user history.
+The ML pipeline and rule-based engine are exposed through Flask for real-time inference.
 
 ---
 
-## **Project Structure**
+# **Project Structure **
 
 ```
-AI_Project_1/
-│
-├── data/                   # Synthetic data generation (optional)
-├── models/                 # Trained model artifacts (optional)
-├── app.py                  # Flask API
-├── notebook.ipynb          # Full pipeline development
-├── README.md               # Project documentation
-└── requirements.txt        # Dependencies
-```
-
----
-
-## **Use Cases**
-
-* E-commerce product recommendations
-* Content platforms (movies, books, articles)
-* User-behaviour modeling prototypes
-* ML engineering portfolio projects
-
----
-
-## **Status**
-
-This is a working end-to-end pipeline demonstrating the lifecycle of an ML recommendation system. It can be extended with:
-
-* Model persistence
-* A/B testing
-* Authentication
-* Caching
-* Cloud deployment
-
----
-
-📁 Project Structure
 AI_Project_1/
 │
 ├── app.py
@@ -120,7 +90,7 @@ AI_Project_1/
 │       • Model evaluation (RMSE)
 │
 ├── interactions.csv
-│   └── Schema for logged user interactions
+│   └── Schema for interaction logs
 │       Columns:
 │       user_id, product_clicked, purchased
 │
@@ -129,4 +99,30 @@ AI_Project_1/
 │
 └── README.md
     └── Project documentation
+```
+
+*(Note: data/ and models/ folders were removed since they do not exist in repo and create confusion.)*
+
+---
+
+## **Use Cases**
+
+* E-commerce recommendations
+* Content and media platforms
+* Behaviour analysis prototypes
+* ML engineering portfolio projects
+
+---
+
+## **Status**
+
+This is a working end-to-end ML system. Future improvements may include:
+
+* Model persistence
+* A/B testing
+* Authentication
+* Caching
+* Cloud deployment
+
+---
 
