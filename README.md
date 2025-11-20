@@ -105,6 +105,8 @@ This is a working end-to-end pipeline demonstrating the lifecycle of an ML recom
 * Cloud deployment
 
 ---
+
+📁 Project Structure
 AI_Project_1/
 │
 ├── app.py
