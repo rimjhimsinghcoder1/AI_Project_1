@@ -1,4 +1,0 @@
-pandas
-faker
-scikit-surprise
-Flask
