@@ -105,4 +105,26 @@ This is a working end-to-end pipeline demonstrating the lifecycle of an ML recom
 * Cloud deployment
 
 ---
+AI_Project_1/
+│
+├── app.py
+│   └── Flask REST API serving real-time recommendations
+│
+├── recommendation_system.py
+│   └── Core ML pipeline:
+│       • Synthetic data generation
+│       • Rule-based recommendations
+│       • Collaborative Filtering (SVD)
+│       • Model evaluation (RMSE)
+│
+├── interactions.csv
+│   └── Schema for logged user interactions
+│       Columns:
+│       user_id, product_clicked, purchased
+│
+├── requirements.txt
+│   └── Project dependencies for reproducibility
+│
+└── README.md
+    └── Project documentation
 
