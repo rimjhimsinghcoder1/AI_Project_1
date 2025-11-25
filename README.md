@@ -101,7 +101,7 @@ AI_Project_1/
     └── Project documentation
 ```
 
-*(Note: data/ and models/ folders were removed since they do not exist in repo and create confusion.)*
+
 
 ---
 
