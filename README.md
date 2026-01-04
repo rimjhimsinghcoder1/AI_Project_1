@@ -6,6 +6,8 @@
 
 This project demonstrates a complete end-to-end **machine learning recommendation system** suitable for e-commerce or content platforms. It covers **synthetic data generation**, **rule-based and collaborative filtering algorithms**, and **real-time model deployment** using a **Flask REST API**.
 
+**Author - Rimjhim Singh (Rémy)**
+
 ---
 
 ## **Features**
