@@ -76,7 +76,7 @@ The ML pipeline and rule-based engine are exposed through Flask for real-time in
 
 ---
 
-# **Project Structure **
+# **Project Structure**
 
 ```
 AI_Project_1/
